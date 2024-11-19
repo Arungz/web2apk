@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web to APK Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Web to APK Converter</h1>
+  </header>
+  <main>
+    <form id="apk-form" enctype="multipart/form-data" method="POST">
+      <label for="website-url">Website URL:</label>
+      <input type="url" id="website-url" name="website-url" placeholder="https://example.com" required>
+      
+      <label for="custom-logo">Custom Logo:</label>
+      <input type="file" id="custom-logo" name="custom-logo" accept="image/png, image/jpeg">
+      
+      <label for="app-name">App Name:</label>
+      <input type="text" id="app-name" name="app-name" required>
+      
+      <label for="app-description">App Description:</label>
+      <textarea id="app-description" name="app-description" rows="4"></textarea>
+      
+      <button type="submit">Generate APK</button>
+    </form>
+  </main>
+</body>
+</html>
